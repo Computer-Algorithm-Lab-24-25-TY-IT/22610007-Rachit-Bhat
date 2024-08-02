@@ -23,11 +23,14 @@ vector<vector<int>> multiplyMatrices(const vector<vector<int>>& mat1, const vect
 }
 
 void printMatrix(const vector<vector<int>>& matrix) {
-    for (const auto& row : matrix) {
-        for (int val : row) {
-            cout << val << " ";
+    int numRows = matrix.size();
+    int numCols = matrix[0].size();
+    
+    for (int i = 0; i < numRows; ++i) { 
+        for (int j = 0; j < numCols; ++j) { 
+            cout << matrix[i][j] << " "; /
         }
-        cout << endl;
+        cout << endl; 
     }
 }
 
